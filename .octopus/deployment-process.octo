@@ -2,7 +2,7 @@ process {
     Id = "deploymentprocess-Projects-8"
     OwnerId = "Projects-8"
     IsFrozen = false
-    Version = 1
+    Version = 2
     SpaceId = "Spaces-1"
     Steps {
         run_a_script {
@@ -55,7 +55,7 @@ process {
                         octopus.action.script.scriptbody {
                             Key = "Octopus.Action.Script.ScriptBody"
                             Value {
-                                Value = ";"
+                                Value = "`hello`;"
                                 IsSensitive = false
                                 HasValue = true
                             }
